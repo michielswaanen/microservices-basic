@@ -22,3 +22,9 @@ Paste `127.0.0.1 posts.com` at the bottom of the `hosts` file.
 ## Start Application
 
 Run this project using `skaffold dev` (may need to run 2 times)
+
+## Terminate Application
+
+Just type `CTRL+C` to terminate Skaffold.
+Check if Skaffold deleted all the pods, services and deployments by running `kubectl get all`.
+If this is not the case, run `kubectl delete all -all`
